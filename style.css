@@ -179,7 +179,7 @@ h2.allText {
 
 
 /* media queries */
-@media screen and (max-width:400px) {
+@media screen and (min-width:600px) {
     h2.allText {
         font-size: 4rem;
         text-align: center;
@@ -188,7 +188,7 @@ h2.allText {
     }
     
     .categories{
-        width:30v;
+        width:30vw;
         height:20vh;
     }
     .photo {
