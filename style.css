@@ -8,7 +8,7 @@ body {
     padding: 0;
     background: #01181bbd;
     cursor: default;
-    margin-bottom:10rem;
+    margin-bottom: 10rem;
 }
 
 .feat .body {
@@ -61,23 +61,25 @@ h2 {
     width: 40%;
     overflow: hidden;
 }
-#featuredImageDescription{
-    font-size:2rem;
-    text-align:left;
-    color:#aecfa4;
-    margin:3rem 2rem 0rem 2rem;
-    font-style:italic;
-    position:relative;
-    bottom:0;
-    left:0;
+
+#featuredImageDescription {
+    font-size: 2rem;
+    text-align: left;
+    color: #aecfa4;
+    margin: 3rem 2rem 0rem 2rem;
+    font-style: italic;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
+
 .categoriesContainer {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.categories{
+.categories {
     background: teal;
     margin: auto;
     margin-top: 2rem;
@@ -88,15 +90,17 @@ h2 {
     background-position: center;
     background-size: 100% 100%;
     border: 0.3rem solid #46a094;
-    transition:all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
-.categories:hover{
-    background-size:110% 110%;
-    cursor:pointer;
+
+.categories:hover {
+    background-size: 110% 110%;
+    cursor: pointer;
 }
-.categories:hover h2{
-    opacity:0.5;
-    color:#12adc1;
+
+.categories:hover h2 {
+    opacity: 0.5;
+    color: #12adc1;
 }
 
 h2.categoryName {
@@ -104,7 +108,7 @@ h2.categoryName {
     margin: auto;
     font-size: 4rem;
     color: #aecfa4;
-    transition:all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .featuredPhoto {
@@ -135,34 +139,60 @@ h2.categoryName {
     color: #12adc1;
     font-size: 2rem;
 }
-h2.allText{
-    font-size:7rem;
-    text-align:center;
-    margin:20rem 0 5rem;
-    padding-top:5rem;
-    border-top:0.5rem solid #12adc1;
-    color:#aecfa4;
+
+h2.allText {
+    font-size: 7rem;
+    text-align: center;
+    margin: 20rem 0 5rem;
+    padding-top: 5rem;
+    border-top: 0.5rem solid #12adc1;
+    color: #aecfa4;
 }
-.photo{
-    border-radius:0.5rem;
-    transition:all 500ms ease-in
+
+.photo {
+    border-radius: 0.5rem;
+    transition: all 500ms ease-in
 }
-.photo:hover{
+
+.photo:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 10px #333;
-    cursor:pointer;
-    border-radius:0.1rem;
+    cursor: pointer;
+    border-radius: 0.1rem;
 }
-.photo:hover h2{
-    opacity:1;
+
+.photo:hover h2 {
+    opacity: 1;
 }
-.photoDescription{
-    position:relative;
-    bottom:0rem;
-    top:70%;
-    left:0rem;
-    margin-left:2rem;
-    transition:500ms ease-in-out;
-    opacity:0;
-    color:#c5e6e3;
+
+.photoDescription {
+    position: relative;
+    bottom: 0rem;
+    top: 70%;
+    left: 0rem;
+    margin-left: 2rem;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+    color: #c5e6e3;
+}
+
+
+
+/* media queries */
+@media screen and (max-width:400px) {
+    h2.allText {
+        font-size: 4rem;
+        text-align: center;
+        margin: 5rem 0 5rem;
+        padding-top: 5rem;
+    }
+    
+    .categories{
+        width:30vw;
+        height:20vh;
+    }
+    .photo {
+        width: 80vw;
+        height:30vh;
+    }
 }
