@@ -179,7 +179,7 @@ h2.allText {
 
 
 /* media queries */
-@media screen and (min-width:600px) {
+@media screen and (max-width:500px) {
     h2.allText {
         font-size: 4rem;
         text-align: center;
