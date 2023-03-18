@@ -47,7 +47,7 @@ async function featuredImage(){
       return response.json();
     })
     .then(data => {
-      console.log(data);
+      // console.log(data);
       changeFeaturedPhoto(data)
     //   earthImages()
     })
